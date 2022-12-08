@@ -6,10 +6,14 @@ set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 syntax enable
 
 call plug#begin(stdpath('data') . './plugged')
 	Plug 'ishan9299/nvim-solarized-lua'
+	
+	"Language Support
+	"Plug 'fsharp/vim-fsharp'
   	
 	" cmp + function arguments 
 	Plug 'ray-x/lsp_signature.nvim'
@@ -60,5 +64,6 @@ lua <<EOF
 	require("lsp_conf")
 	require("lsp_sig")
 EOF 
+
 
 autocmd CompleteDone * pclose!
