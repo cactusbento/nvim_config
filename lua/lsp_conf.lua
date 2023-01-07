@@ -13,6 +13,9 @@ lspcfg.jedi_language_server.setup{}
 --lspcfg.pylsp.setup{}
 lspcfg.java_language_server.setup{}
 
+
+lspcfg.rust_analyzer.setup{}
+
 lspcfg.dartls.setup{
 	root_dir = lspcfg.util.root_pattern("*.dart"),
 	init_options = {
