@@ -12,9 +12,13 @@ lspcfg.vala_ls.setup{}
 lspcfg.jedi_language_server.setup{}
 --lspcfg.pylsp.setup{}
 lspcfg.java_language_server.setup{}
-
-
+lspcfg.crystalline.setup{}
 lspcfg.rust_analyzer.setup{}
+--lspcfg.zk.setup{}
+lspcfg.marksman.setup{}
+
+lspcfg.vls.setup{}
+lspcfg.vimls.setup{}
 
 lspcfg.dartls.setup{
 	root_dir = lspcfg.util.root_pattern("*.dart"),
@@ -57,19 +61,39 @@ lspcfg.kotlin_language_server.setup{
 }
 
 lspcfg.sumneko_lua.setup{
+	cmd = {"lua-language-server", "--logpath", "~/.config/sumneko", "-E", "/usr/lib/lua-language-server/main.lua"},
+	single_file_support = true,
 	settings = {
 		Lua = {
-			runtime = { version = 'LuaJIT' },
+			runtime = {
+				version = 'LuaJIT',
+				path = {
+					"?.lua",
+					"?/init.lua",
+					'/usr/share/lua/5.3/?.lua',
+					'/usr/share/lua/5.3/?/init.lua',
+					'/usr/share/lua/5.4/?.lua',
+					'/usr/share/lua/5.4/?/init.lua',
+				},
+				pathStrict = false,
+			},
+			diagnostics = {
+				globals = { "vim" },
+			},
+			workspace = {
+				checkThirdParty = true,
+				maxPreload = 150,
+				library = {
+					vim.api.nvim_get_runtime_file("", true),
+					'/usr/share/lua/5.4',
+					'/usr/share/lua/5.3',
+					"/usr/share/awesome/lib",
+				},
+			},
+			telemetry = {
+				enable = false,
+			},
 		},
-		diagnostics = {
-			globals = { "vim" },
-		},
-		workspace = {
-			library = vim.api.nvim_get_runtime_file("", true),
-		},
-		telemetry = {
-        	enable = false,
-      	},
 	},
 }
 
@@ -89,6 +113,8 @@ lspcfg.gopls.setup {
 	},
 }
 
+--lspcfg.csharp_ls.setup{}
+
 lspcfg.omnisharp.setup{
 	cmd = {"omnisharp"},
 	-- Enables support for reading code style, naming convention and analyzer
@@ -104,7 +130,7 @@ lspcfg.omnisharp.setup{
     enable_ms_build_load_projects_on_demand = false,
 
     -- Enables support for roslyn analyzers, code fixes and rulesets.
-    enable_roslyn_analyzers = false,
+    enable_roslyn_analyzers = true,
 
     -- Specifies whether 'using' directives should be grouped and sorted during
     -- document formatting.

@@ -65,5 +65,5 @@ lua <<EOF
 	require("lsp_sig")
 EOF 
 
-
+autocmd BufNewFile,BufRead *.v :set filetype=vlang
 autocmd CompleteDone * pclose!
