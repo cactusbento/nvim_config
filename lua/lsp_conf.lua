@@ -60,7 +60,7 @@ lspcfg.kotlin_language_server.setup{
 	root_dir = lspcfg.util.root_pattern("*.kt")
 }
 
-lspcfg.sumneko_lua.setup{
+lspcfg.lua_ls.setup{
 	cmd = {"lua-language-server", "--logpath", "~/.config/sumneko", "-E", "/usr/lib/lua-language-server/main.lua"},
 	single_file_support = true,
 	settings = {
