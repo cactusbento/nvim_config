@@ -7,9 +7,6 @@
 [submodule "plugged/cmp_luasnip"]
 	path = plugged/cmp_luasnip
 	url = https://github.com/saadparwaiz1/cmp_luasnip.git
-[submodule "plugged/lsp_signature.nvim"]
-	path = plugged/lsp_signature.nvim
-	url = https://github.com/ray-x/lsp_signature.nvim.git
 [submodule "plugged/nvim-solarized-lua"]
 	path = plugged/nvim-solarized-lua
 	url = https://github.com/ishan9299/nvim-solarized-lua.git
@@ -37,9 +34,6 @@
 [submodule "plugged/nvim-yarp"]
 	path = plugged/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp.git
-[submodule "plugged/go.nvim"]
-	path = plugged/go.nvim
-	url = https://github.com/ray-x/go.nvim.git
 [submodule "plugged/lualine.nvim"]
 	path = plugged/lualine.nvim
 	url = https://github.com/nvim-lualine/lualine.nvim.git
