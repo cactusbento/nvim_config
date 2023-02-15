@@ -9,7 +9,7 @@ set shiftwidth=4
 set softtabstop=4
 syntax enable
 
-call plug#begin(stdpath('data') . './plugged')
+call plug#begin(stdpath("config") . '/plugged')
 	Plug 'ishan9299/nvim-solarized-lua'
 	
 	"Language Support
