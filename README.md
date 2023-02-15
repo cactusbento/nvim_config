@@ -1,3 +1,3 @@
 # nvim_config
 
-neovim config files
+clone into `~/.config/nvim/`
