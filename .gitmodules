@@ -1,0 +1,81 @@
+[submodule "plugged/nvim-lspconfig"]
+	path = plugged/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "plugged/nvim-treesitter"]
+	path = plugged/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "plugged/cmp_luasnip"]
+	path = plugged/cmp_luasnip
+	url = https://github.com/saadparwaiz1/cmp_luasnip.git
+[submodule "plugged/lsp_signature.nvim"]
+	path = plugged/lsp_signature.nvim
+	url = https://github.com/ray-x/lsp_signature.nvim.git
+[submodule "plugged/nvim-solarized-lua"]
+	path = plugged/nvim-solarized-lua
+	url = https://github.com/ishan9299/nvim-solarized-lua.git
+[submodule "plugged/cmp-buffer"]
+	path = plugged/cmp-buffer
+	url = https://github.com/hrsh7th/cmp-buffer.git
+[submodule "plugged/vim-vsnip"]
+	path = plugged/vim-vsnip
+	url = https://github.com/hrsh7th/vim-vsnip.git
+[submodule "plugged/nvim-lsp-installer"]
+	path = plugged/nvim-lsp-installer
+	url = https://github.com/williamboman/nvim-lsp-installer.git
+[submodule "plugged/cmp-nvim-lsp"]
+	path = plugged/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+[submodule "plugged/coq_nvim"]
+	path = plugged/coq_nvim
+	url = https://github.com/ms-jpq/coq_nvim.git
+[submodule "plugged/vim-fsharp"]
+	path = plugged/vim-fsharp
+	url = https://github.com/fsharp/vim-fsharp.git
+[submodule "plugged/vim-hug-neovim-rpc"]
+	path = plugged/vim-hug-neovim-rpc
+	url = https://github.com/roxma/vim-hug-neovim-rpc.git
+[submodule "plugged/nvim-yarp"]
+	path = plugged/nvim-yarp
+	url = https://github.com/roxma/nvim-yarp.git
+[submodule "plugged/go.nvim"]
+	path = plugged/go.nvim
+	url = https://github.com/ray-x/go.nvim.git
+[submodule "plugged/lualine.nvim"]
+	path = plugged/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim.git
+[submodule "plugged/cmp-path"]
+	path = plugged/cmp-path
+	url = https://github.com/hrsh7th/cmp-path.git
+[submodule "plugged/ale"]
+	path = plugged/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "plugged/cmp-tabnine"]
+	path = plugged/cmp-tabnine
+	url = https://github.com/tzachar/cmp-tabnine.git
+[submodule "plugged/LuaSnip"]
+	path = plugged/LuaSnip
+	url = https://github.com/L3MON4D3/LuaSnip.git
+[submodule "plugged/coq.artifacts"]
+	path = plugged/coq.artifacts
+	url = https://github.com/ms-jpq/coq.artifacts.git
+[submodule "plugged/cmp-vsnip"]
+	path = plugged/cmp-vsnip
+	url = https://github.com/hrsh7th/cmp-vsnip.git
+[submodule "plugged/nvim-web-devicons"]
+	path = plugged/nvim-web-devicons
+	url = https://github.com/kyazdani42/nvim-web-devicons.git
+[submodule "plugged/vim-solarized"]
+	path = plugged/vim-solarized
+	url = https://github.com/ericbn/vim-solarized.git
+[submodule "plugged/lspkind.nvim"]
+	path = plugged/lspkind.nvim
+	url = https://github.com/onsails/lspkind.nvim.git
+[submodule "plugged/syntastic"]
+	path = plugged/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "plugged/cmp-cmdline"]
+	path = plugged/cmp-cmdline
+	url = https://github.com/hrsh7th/cmp-cmdline.git
+[submodule "plugged/nvim-cmp"]
+	path = plugged/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
