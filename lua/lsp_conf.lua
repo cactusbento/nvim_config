@@ -152,3 +152,10 @@ lspcfg.omnisharp.setup{
     -- true
     analyze_open_documents_only = false,
 }
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}

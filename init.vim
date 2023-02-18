@@ -14,6 +14,10 @@ call plug#begin(stdpath("config") . '/plugged')
 	
 	"Language Support
 	"Plug 'fsharp/vim-fsharp'
+	"
+	"LSP Package Manager
+	"Plug 'williamboman/mason.nvim'
+	"Plug 'WhoIsSethDaniel/mason-tool-installer.nvim'
   	
 	" cmp + function arguments 
 	Plug 'ray-x/lsp_signature.nvim'
