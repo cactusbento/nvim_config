@@ -11,7 +11,13 @@ lspcfg.hls.setup{}
 lspcfg.vala_ls.setup{}
 lspcfg.jedi_language_server.setup{}
 --lspcfg.pylsp.setup{}
-lspcfg.java_language_server.setup{}
+lspcfg.java_language_server.setup{
+	init_options = {
+		diagnostics = {
+			enable = false,
+		}
+	}
+}
 lspcfg.crystalline.setup{}
 lspcfg.rust_analyzer.setup{}
 --lspcfg.zk.setup{}
