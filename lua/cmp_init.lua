@@ -1,6 +1,16 @@
 -- Set up nvim-cmp.
 local cmp = require('cmp')
 
+cmp.setup {
+	sources =  {
+  		{ name = 'nvim_lsp' },
+		{ name = 'cmp_tabnine' },
+  		{ name = 'vsnip' },
+		{ name = 'path' },
+  		{ name = 'buffer' },
+	}
+}
+
 cmp.setup({
 	snippet = {
 		-- REQUIRED - you must specify a snippet engine
@@ -19,14 +29,6 @@ cmp.setup({
   		['<C-e>'] = cmp.mapping.abort(),
   		['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 	}),
-	sources = cmp.config.sources({
-  		{ name = 'nvim_lsp' },
-  		{ name = 'vsnip' },
-		{ name = 'path' },
-		{ name = 'cmp_tabnine' },
-	}, {
-  		{ name = 'buffer' },
-	})
 })
 
 -- Set configuration for specific filetype.
