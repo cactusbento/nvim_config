@@ -69,5 +69,15 @@ lua <<EOF
 	require("lsp_sig")
 EOF 
 
+
+let g:ale_virtualtext_cursor = 'disabled'
+let g:ale_set_highlights = 0
+
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+
 autocmd BufNewFile,BufRead *.v :set filetype=vlang
 autocmd CompleteDone * pclose!
