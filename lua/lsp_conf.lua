@@ -1,11 +1,13 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspcfg = require("lspconfig")
 
+lspcfg.tsserver.setup{}
+
 lspcfg.bashls.setup{}
 lspcfg.clangd.setup{}
 lspcfg.cmake.setup{}
 lspcfg.jdtls.setup{}
---lspcfg.csharp_ls.setup{}
+lspcfg.csharp_ls.setup{}
 lspcfg.fsautocomplete.setup{}
 lspcfg.hls.setup{}
 lspcfg.vala_ls.setup{}
@@ -18,9 +20,9 @@ lspcfg.java_language_server.setup{
 		}
 	}
 }
-lspcfg.crystalline.setup{}
+
 lspcfg.rust_analyzer.setup{}
---lspcfg.zk.setup{}
+lspcfg.zls.setup{}
 lspcfg.marksman.setup{}
 
 lspcfg.vls.setup{}
@@ -43,6 +45,7 @@ lspcfg.dartls.setup{
 	}
 }
 
+lspcfg.crystalline.setup{}
 lspcfg.solargraph.setup{
 	root_dir = lspcfg.util.root_pattern("*.rb"),
 	init_options = {
@@ -120,7 +123,7 @@ lspcfg.gopls.setup {
 }
 
 --lspcfg.csharp_ls.setup{}
-
+--[[
 lspcfg.omnisharp.setup{
 	cmd = {"omnisharp"},
 	-- Enables support for reading code style, naming convention and analyzer
@@ -158,6 +161,7 @@ lspcfg.omnisharp.setup{
     -- true
     analyze_open_documents_only = false,
 }
+]]--
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
